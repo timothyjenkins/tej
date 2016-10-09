@@ -1,2 +1,2 @@
-# tej
-What I think about things.
+# timscadence
+My thoughts on things.
