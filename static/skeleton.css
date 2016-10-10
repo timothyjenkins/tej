@@ -293,11 +293,12 @@ Link hovers #F00038
      }
 
 .nav{
-    padding-top: 10px;
+    padding-top: 20px;
     display: inline;
     text-align: center;
     transform: translate(-50%, -50%);
     font-size: 3.5rem;
+    padding-bottom: 20px;
     }
 
 .footer{
