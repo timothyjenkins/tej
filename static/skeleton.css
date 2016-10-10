@@ -162,8 +162,9 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
-
+  margin-top: 0;
+  color: #023C4F
+  }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -279,7 +280,7 @@ hr {
 
 /* Custom
 Maven Pro Regular
-Body font is #404040
+Body font is #023C4F
 Header font #023C4F
 Link hovers #F00038
 
@@ -318,6 +319,7 @@ Link hovers #F00038
 .post-title{
     text-align: center;
     font-size: 3rem;
+    color: #023C4F;
     }
 
 .words{
@@ -366,6 +368,7 @@ Link hovers #F00038
      text-align: center;
      padding-top: 10%;
      font-size: 2.2rem;
+     color: #023C4F
     }
 
 .words{
