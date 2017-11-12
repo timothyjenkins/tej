@@ -11,7 +11,7 @@ app.config['FREEZER_RELATIVE_URLS'] = True
 #controllers
 @app.route("/")
 def index():
-    return render_template('compact-living.html')
+    return render_template('internet-of-things-2018.html')
 
 @app.route("/archive.html")
 def archive():
@@ -20,6 +20,10 @@ def archive():
 @app.route("/compact-living.html")
 def compact():
     return render_template('compact-living.html')
+
+@app.route("/internet-of-things-2018.html")
+def iot():
+    return render_template('internet-of-things-2018.html')
 
 #launch
 if __name__ == "__main__":
