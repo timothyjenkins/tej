@@ -297,7 +297,18 @@ Link hovers #F00038
     display: inline;
     text-align: center;
     transform: translate(-50%, -50%);
-    font-size: 3.5rem;
+    font-size: 2rem;
+    line-height: 3;
+    padding-bottom: 20px;
+    }
+
+.inverse-nav{
+    padding-top: 20px;
+    display: none;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    line-height: 3;
     padding-bottom: 20px;
     }
 
@@ -319,9 +330,16 @@ Link hovers #F00038
 
 .post-title{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #023C4F;
     }
+
+.post-date{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 2.0rem;
+    color: #023C4F
+     }
 
 .words{
     padding-top: 25px;
@@ -360,12 +378,34 @@ Link hovers #F00038
     }
 
 .nav{
+    display: none;
     top: 75px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
     padding-top: 10px;
     position: absolute;
+    }
+
+.inverse-nav{
+    padding-top: 20px;
+    display: inline;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    line-height: 3;
+    padding-bottom: 20px;
+    }
+
+.photo{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    padding-top: 25px;
+    padding-bottom:25px;
+    max-width: 75%;
+    max-height: 75%;
     }
 
 .footer{
@@ -382,6 +422,13 @@ Link hovers #F00038
      font-size: 2.2rem;
      color: #023C4F
     }
+
+.post-date{
+     text-align: center;
+     padding-top: 10%;
+     font-size: 1.6rem;
+     color: #023C4F
+    }    
 
 .words{
     float: none;

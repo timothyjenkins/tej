@@ -13,10 +13,6 @@ app.config['FREEZER_RELATIVE_URLS'] = True
 def index():
     return render_template('compact-living.html')
 
-@app.route("/about.html")
-def about():
-    return render_template('about.html')
-
 @app.route("/archive.html")
 def archive():
     return render_template('archive.html')
