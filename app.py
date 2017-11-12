@@ -25,6 +25,10 @@ def compact():
 def iot():
     return render_template('internet-of-things-2018.html')
 
+@app.route("/about-me.html")
+def about():
+    return render_template('about-me.html')
+
 #launch
 if __name__ == "__main__":
     app.run(debug=True)
