@@ -29,6 +29,10 @@ def iot():
 def about():
     return render_template('about-me.html')
 
+@app.route("/jupyter-css.html")
+def jupyter_css():
+    return render_template('jupyter-css.html')
+
 #launch
 if __name__ == "__main__":
     app.run(debug=True)
