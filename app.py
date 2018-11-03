@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from flask_frozen import Freezer
 
 #initialization
 app = Flask(__name__)
@@ -7,11 +8,17 @@ app = Flask(__name__)
 app.config['FREEZER_DESTINATION'] = 'build'
 app.config['FREEZER_DESTINATION_IGNORE'] = ['.git*', 'CNAME', '.gitignore', 'readme.md']
 app.config['FREEZER_RELATIVE_URLS'] = True
+freezer = Freezer(app)
+
+#build method
+@app.cli.command()
+def freeze():
+    freezer.freeze()
 
 #controllers
 @app.route("/")
 def index():
-    return render_template('internet-of-things-2018.html')
+    return render_template('gitlab.html')
 
 @app.route("/archive.html")
 def archive():
@@ -35,7 +42,7 @@ def jupyter_css():
 
 @app.route("/gitlab.html")
 def gitlab():
-    return render_template('gitlab.html')
+   return render_template('gitlab.html')
 
 #launch
 if __name__ == "__main__":
