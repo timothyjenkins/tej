@@ -33,6 +33,10 @@ def about():
 def jupyter_css():
     return render_template('jupyter-css.html')
 
+@app.route("/gitlab.html")
+def gitlab():
+    return render_template('gitlab.html')
+
 #launch
 if __name__ == "__main__":
     app.run(debug=True)
